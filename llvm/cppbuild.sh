@@ -15,6 +15,10 @@ download https://github.com/llvm/llvm-project/releases/download/llvmorg-$LLVM_VE
 mkdir -p $PLATFORM
 cd $PLATFORM
 INSTALL_PATH=`pwd`
+################ Temp
+echo "Edit this file if needed to remove this override: Skipping LLVM library compilation"
+exit 0
+################
 echo "Decompressing archives... (ignore any symlink errors)"
 tar --totals -xf ../llvm-$LLVM_VERSION.src.tar.xz || tar --totals -xf ../llvm-$LLVM_VERSION.src.tar.xz
 cd llvm-$LLVM_VERSION.src
